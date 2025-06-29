@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Xie Ruan Ying Jun</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('Lunar.png') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      height: 100vh;
+      overflow: hidden;
+      position: relative;
+    }
+    .container {
+      position: absolute;
+      bottom: 30px;
+      left: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      max-width: 500px;
+    }
+    .text-top {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      text-align: right;
+    }
+    .text-top h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+    .text-top p {
+      margin: 5px 0 0;
+      font-size: 1.2em;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 12px;
+      font-size: 0.9em;
+      color: #ffffff;
+      background: transparent;
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 8px;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+      backdrop-filter: blur(2px);
+    }
+    .btn:hover {
+      background: rgba(29, 161, 242, 0.4);
+      transform: scale(1.05);
+      box-shadow: 0 4px 12px rgba(29, 161, 242, 0.4);
+    }
+    .icon {
+      width: 18px;
+      height: 18px;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+    #audio-controls {
+      width: 100%;
+      margin-top: 10px;
+    }
+    #audio-controls button {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="text-top">
+    <h1>Xie Ruan Ying Jun 💖</h1>
+    <p>Chào bạn! Hãy theo dõi mình trên các nền tảng dưới đây nhé ♥</p>
+  </div>
+  <div class="container">
+    <a class="btn" href="https://steamcommunity.com/profiles/76561198444169867/" target="_blank"><img class="icon" src="steam.png">Steam</a>
+    <a class="btn" href="https://www.instagram.com/xieruanyingjun" target="_blank"><img class="icon" src="instagram.png">Instagram</a>
+    <a class="btn" href="https://www.tiktok.com/@yingjun.1525" target="_blank"><img class="icon" src="tiktok.png">TikTok</a>
+    <a class="btn" href="https://www.xbox.com/en-US/play/user/XieRuanYingJun" target="_blank"><img class="icon" src="xbox.png">Xbox</a>
+    <a class="btn" href="https://open.spotify.com/user/gkn4qyz7rj5ij42yc6zo6kicl" target="_blank"><img class="icon" src="neon spotify.png">Spotify</a>
+    <a class="btn" href="https://www.reddit.com/user/xieruanyingjunn/" target="_blank"><img class="icon" src="reddit.png">Reddit</a>
+    <a class="btn" href="https://discord.gg/mMwxCEUsvs" target="_blank"><img class="icon" src="discord.png">Discord</a>
+    <a class="btn" href="https://www.threads.com/@xieruanyingjun" target="_blank"><img class="icon" src="threads.png">Threads</a>
+    <a class="btn" href="https://paypal.me/xieruanyingjun" target="_blank"><img class="icon" src="paypal.png">Paypal</a>
+    <a class="btn" href="mailto:anhquan1525@gmail.com" target="_blank"><img class="icon" src="email.png">Email</a>
+    <a class="btn" href="https://www.ebay.com/usr/xieruanyingjun" target="_blank"><img class="icon" src="ebay.png">Ebay</a>
+    <a class="btn" href="https://github.com/XRYJ-KG" target="_blank"><img class="icon" src="github.png">GitHub</a>
+    <button class="btn" onclick="copyRiotID()"><img class="icon" src="riot-games.png">XieRuanYingJun#0000 📋</button>
+
+    <div id="audio-controls">
+  <audio id="bg-music" autoplay loop>
+    <source src="Broken Echoes (EDM Remix).mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <div style="display: flex; align-items: center; gap: 10px;">
+    <button class="btn" style="padding: 4px 10px; font-size: 0.8em;" onclick="toggleAudio()">🔊</button>
+    <!-- hitwebcounter Code START -->
+    <a href="https://www.hitwebcounter.com" target="_blank">
+      <img src="https://hitwebcounter.com/counter/counter.php?page=21013357&style=0004&nbdigits=5&type=page&initCount=0" title="Counter Widget" alt="Visit counter For Websites" border="0" style="height: 24px;" />
+    </a>
+  </div>
+</div>
+  </div>
+  <script>
+    const music = document.getElementById('bg-music');
+    function toggleAudio() {
+      if (music.paused) {
+        music.play();
+      } else {
+        music.pause();
+      }
+    }
+  function copyRiotID() {
+    const tempInput = document.createElement('input');
+    tempInput.value = 'XieRuanYingJun#0000';
+    document.body.appendChild(tempInput);
+    tempInput.select();
+    document.execCommand('copy');
+    document.body.removeChild(tempInput);
+    alert('Đã sao chép Riot ID!');
+  }
+  </script>
+</body>
+</html>
